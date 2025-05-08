@@ -1,4 +1,7 @@
 # OpenWMS
+# en: Project for Django Python Course
+# fr: Projet pour un cours Django
+
 
 # V 0.0 du 08/05/2025
     Début du projet
