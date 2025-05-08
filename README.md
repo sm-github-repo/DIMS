@@ -1,4 +1,4 @@
-# OpenWMS
+# DIMS - Django Inventory Management Software
 # en: Project for Django Python Course
 # fr: Projet pour un cours Django
 
