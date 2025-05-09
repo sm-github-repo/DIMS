@@ -1,3 +1,4 @@
 .venv
 .idea
 *.bkp
+/dims/db.sqlite3
