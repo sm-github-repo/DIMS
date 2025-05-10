@@ -3,9 +3,23 @@
 # fr: Projet pour un cours Django
 
 
-# V 0.0 du 08/05/2025
-    Début du projet
-
+# V 0.2 du 11/05/2025
+   Début du projet
+   Template site 
+   Modele de données 
+   Application Entreprise:
+      Rien
+   Application Entrepot :  
+      Vue Login
+      Vue Listing
+      Formulaire création
+    Application Catalogue : 
+      Rien
+    Tableau de Bord : 
+      Rien
+    Utilisateurs :
+      Module Admin Django
+      Controle des views en connexion
 
 # ROADMAP V1.0
 
