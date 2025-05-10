@@ -18,8 +18,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from entrepot import views as entrepot_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('entrepot.urls')),
-    path('', include('catalogue.urls')),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('', entrepot_views.tbd, name='entrepot-tbd'),
+    path('entrepot/', include('entrepot.urls')),
+    path('catalogue/', include('catalogue.urls')),
+    path('login', entrepot_views.user_login, name='login'),
+    path('logout', entrepot_views.user_logout, name='logout'),
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL,
+                          document_root=settings.STATIC_ROOT)
