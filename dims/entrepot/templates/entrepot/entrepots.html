@@ -1,0 +1,16 @@
+{% extends "entrepot/base.html" %}
+{% block title %}Les Entrepots{% endblock %}
+{% block content %}
+<div class="container">
+    <h3>Liste des entrepots</h3>
+    <a href="{% url 'entrepot-create' %}" class="btn btn-success btn-sm" role="button">Ajout</a>
+
+    <div class="list-group">
+        {% for un_entrepot in entrepots %}
+        <a class="list-group-item list-group-item-action" href="#">{{ un_entrepot.nom }} -
+            {{ un_entrepot.adresse.ville }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

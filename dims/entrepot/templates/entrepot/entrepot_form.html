@@ -1,0 +1,17 @@
+{% extends "entrepot/base.html" %}
+{% block content %}
+  <h1>Créer un entrepôt et son adresse</h1>
+  <form method="post">
+    {% csrf_token %}
+    <fieldset class="border p-3 mb-4">
+      <legend class="w-auto">Informations Entrepôt</legend>
+      {{ entrepot_form.as_p }}
+    </fieldset>
+    <fieldset class="border p-3 mb-4">
+      <legend class="w-auto">Adresse</legend>
+      {{ adresse_form.as_p }}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <a class="btn btn-warning" href="{% url 'entrepot-listing' %}">Retour</a>
+  </form>
+{% endblock %}
